@@ -1,83 +1,180 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Academia Gemelos Fitness - Programa para Entrenadores</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Inicia tu carrera como entrenador online - Academia Gemelos Fitness">
+  <title>Inicia tu carrera como entrenador online</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #222; line-height: 1.6; background-color: #f7f7f7; }
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #212529;
+      background: #fff;
+    }
     header {
-      background: url('IMG_4657.jpeg') no-repeat center center;
-      background-size: cover;
-      color: #fff;
-      padding: 40px 20px;
+      background: #151515;
+      color: white;
+      padding: 60px 20px 40px;
       text-align: center;
     }
-    header h1 { margin: 0; font-size: 2.5rem; }
-    header p { font-size: 1.2rem; margin: 10px 0; }
-    .btn { display: inline-block; margin-top: 20px; padding: 15px 25px; background: #00c853; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
-    section { padding: 40px 20px; max-width: 900px; margin: auto; background-color: #fff; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
-    section h2 { color: #00c853; }
-    footer { text-align: center; padding: 20px; font-size: 0.9rem; background-color: #111; color: #fff; }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 20px;
+    }
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      max-width: 700px;
+      font-size: 1.1rem;
+    }
+    ul li::before {
+      content: "✓ ";
+      color: #ff5722;
+      font-weight: bold;
+    }
+    .btn-wsp {
+      display: inline-block;
+      margin-top: 30px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-wsp:hover {
+      background-color: #1ebe5d;
+    }
+    .benefits {
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    .benefits h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .benefit-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .benefit {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .benefit h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #ff5722;
+    }
+    .benefit p {
+      font-size: 0.95rem;
+    }
+    .audiencia {
+      background: #151515;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .audiencia h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .audiencia p {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 1.1rem;
+    }
+    .audiencia-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      color: #ffcc00;
+      font-weight: bold;
+    }
+    .audiencia-list div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 10px;
+      padding: 20px;
+    }
+    footer {
+      background: #151515;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>De entrenador a emprendedor del fitness</h1>
-    <p>Aprendé a facturar todos los meses, captar clientes online y construir tu marca personal de 0 a 5 millones.</p>
-    <a class="btn" href="https://wa.me/595985386043?text=Hola%20Natanael%20Amarilla%2C%20quiero%20m%C3%A1s%20info%20sobre%20el%20programa%20para%20entrenadores" target="_blank">Quiero facturar más como entrenador</a>
-  </header>
-
-  <section>
-    <h2>¿Para quién es este programa?</h2>
+  <header style="position: relative; background: url('https://0nata1.github.io/academiagemelosfitness/img/portada-gemelos.jpg') center/cover no-repeat; color: white;">
+  <div style="position:absolute; inset:0; background: rgba(0,0,0,0.5);"></div>
+  <div style="position:relative; z-index:1;">
+    <h1>Inicia tu carrera como entrenador online</h1>
+    <p>Todo lo que necesitas para emprender con éxito en el mundo del fitness, con un sistema probado que utilizamos.</p>
     <ul>
-      <li>Entrenadores con ingresos inestables</li>
-      <li>Que no saben cómo conseguir clientes online</li>
-      <li>Que trabajan mucho pero no ven resultados</li>
-      <li>Que quieren vivir del fitness sin depender exclusivamente del gimnasio</li>
+      <li>Aprende cómo diseñar, lanzar y vivir de tu negocio de entrenamiento online.</li>
+      <li>Siéntete seguro para entrenar a personas a través de internet.</li>
+      <li>Genera más ingresos y logra tener más tiempo.</li>
     </ul>
+    <a class="btn-wsp" href="https://wa.me/595994654445" target="_blank">Contactanos por WhatsApp</a>
+    </div>
+</header>
+
+  <section class="benefits">
+    <h2>¿Por qué elegir la Academia?</h2>
+    <div class="benefit-grid">
+      <div class="benefit">
+  <h3>Trabajá desde donde quieras con libertad total</h3>
+  <p>Gestioná tu negocio de entrenamiento sin límites geográficos ni horarios.</p>
+</div>
+      <div class="benefit">
+  <h3>Impactá la vida de tus clientes a distancia</h3>
+  <p>Ofrecé transformación real con herramientas efectivas para acompañarlos desde cualquier lugar.</p>
+</div>
+      <div class="benefit">
+        <h3>Subí tus precios y confiá más en tu servicio</h3>
+        <p>Aprendé cómo generar más ingresos que no dependan únicamente de tu tiempo, mientras ofrecés un servicio excepcional.</p>
+      </div>
+    </div>
   </section>
 
-  <section>
-    <h2>¿Qué vas a lograr?</h2>
-    <ul>
-      <li>Sistema claro para vender servicios cada mes</li>
-      <li>Redes sociales que convierten seguidores en clientes</li>
-      <li>Fidelizar alumnos y tener ingresos estables</li>
-      <li>Libertad financiera y tiempo libre</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Lo que incluye el programa</h2>
-    <ul>
-      <li>Mentorías 1 a 1</li>
-      <li>Plantillas, guiones y estrategias listas</li>
-      <li>Soporte semanal</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Sobre nosotros</h2>
-    <p>Somos <strong>Natanael y Julio Amarilla</strong>, entrenadores y mentores. Pasamos de trabajar horas en el gimnasio a construir un negocio online que nos da libertad, tiempo y clientes constantes. Hoy nuestra misión es ayudarte a lograr lo mismo, sin complicaciones técnicas ni fórmulas vacías. Esto lo hicimos nosotros, y también lo podés hacer vos.</p>
-  </section>
-
-  <section>
-    <h2>Preguntas frecuentes</h2>
-    <p><strong>¿Cuánto dura el programa?</strong><br>Depende del nivel en el que estés, pero trabajamos mínimo durante 4 semanas para que veas resultados reales.</p>
-    <p><strong>¿Necesito experiencia?</strong><br>No. Solo ganas de trabajar con personas y crecer como entrenador.</p>
-    <p><strong>¿Y si no vendo?</strong><br>Te acompañamos en cada paso hasta que consigas tus primeros clientes.</p>
-  </section>
-
-  <section>
-    <h2>¿Estás listo para escalar tu negocio?</h2>
-    <p>Da el primer paso para vivir de tu pasión. Escribinos ahora y te contamos cómo arrancar.</p>
-    <a class="btn" href="https://wa.me/595985386043?text=Hola%20Natanael%20Amarilla%2C%20quiero%20m%C3%A1s%20info%20sobre%20el%20programa%20para%20entrenadores" target="_blank">Hablar con nosotros por WhatsApp</a>
+  <section class="audiencia">
+    <h2>¿Quién debería entrar en la Academia?</h2>
+    <p>Ya sea que estés comenzando o que te sientas estancado en tu carrera, este programa te guía paso a paso para que puedas vivir de tu pasión ayudando a más personas, desde donde estés.</p>
+    <div class="audiencia-list">
+      <div>Entrenadores personales</div>
+      <div>Preparadores físicos</div>
+      <div>Entrenadores deportivos</div>
+      <div>Gestores de centros de entrenamiento</div>
+      <div>Nutricionistas</div>
+      <div>Fisioterapeutas</div>
+    </div>
   </section>
 
   <footer>
-    © 2025 Academia Gemelos Fitness. Todos los derechos reservados.
+    <p>&copy; 2025 Academia Gemelos Fitness. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
