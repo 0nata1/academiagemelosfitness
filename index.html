@@ -16,14 +16,14 @@
     }
 
     header {
-      background-color: #555;
-      color: white;
+      background-color: white;
+      color: #111;
       padding: 4rem 1rem;
       text-align: center;
     }
 
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.4rem;
       margin-bottom: 1rem;
     }
 
@@ -39,10 +39,17 @@
       margin: 1rem auto;
       max-width: 600px;
       text-align: left;
+      font-size: 1.05rem;
     }
 
     ul li {
-      margin: 0.5rem 0;
+      margin: 0.7rem 0;
+    }
+
+    ul li::before {
+      content: "✅ ";
+      color: #ff4400;
+      font-weight: bold;
     }
 
     .btn-wsp {
@@ -54,6 +61,11 @@
       border-radius: 5px;
       display: inline-block;
       margin-top: 1.5rem;
+      transition: background 0.3s ease;
+    }
+
+    .btn-wsp:hover {
+      background-color: #1ebe5d;
     }
 
     section {
@@ -78,14 +90,19 @@
       background-color: white;
       padding: 1.5rem;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
       max-width: 300px;
       flex: 1;
     }
 
     .benefit h3 {
-      color: #ff4400;
+      color: #ff5722;
       margin-bottom: 10px;
+      font-size: 1.2rem;
+    }
+
+    .benefit p {
+      font-size: 0.95rem;
     }
 
     footer {
@@ -96,7 +113,6 @@
       margin-top: 4rem;
     }
 
-    /* ✅ Estilos para móviles */
     @media (max-width: 600px) {
       header h1 {
         font-size: 1.8rem;
@@ -109,7 +125,6 @@
 
       ul {
         padding: 0 1rem;
-        text-align: left;
         font-size: 0.95rem;
       }
 
@@ -120,19 +135,13 @@
 
       .benefit {
         max-width: 100%;
-        margin: 0 auto;
       }
 
       .btn-wsp {
         width: 90%;
-        display: block;
         margin: 2rem auto 0;
         text-align: center;
         font-size: 1.1rem;
-      }
-
-      section h2 {
-        font-size: 1.6rem;
       }
     }
   </style>
@@ -143,9 +152,9 @@
     <h1>Iniciá tu carrera como entrenador online</h1>
     <p>Todo lo que necesitás para emprender con éxito en el mundo del fitness, con un sistema probado que utilizamos.</p>
     <ul>
-      <li>✔️ Aprendé cómo diseñar, lanzar y vivir de tu negocio de entrenamiento online.</li>
-      <li>✔️ Sentite seguro para entrenar a personas a través de internet.</li>
-      <li>✔️ Generá más ingresos y lográ tener más tiempo.</li>
+      <li>Aprendé cómo diseñar, lanzar y vivir de tu negocio de entrenamiento online.</li>
+      <li>Sentite seguro para entrenar a personas a través de internet.</li>
+      <li>Generá más ingresos y lográ tener más tiempo.</li>
     </ul>
     <a class="btn-wsp" href="https://wa.me/595994654445" target="_blank">📲 Contáctanos por WhatsApp</a>
   </header>
@@ -154,15 +163,15 @@
     <h2>¿Por qué elegir la Academia?</h2>
     <div class="benefit-grid">
       <div class="benefit">
-        <h3>Trabajá desde donde quieras con libertad total</h3>
+        <h3>📍 Trabajá desde donde quieras con libertad total</h3>
         <p>Gestioná tu negocio de entrenamiento sin límites geográficos ni horarios.</p>
       </div>
       <div class="benefit">
-        <h3>Impactá la vida de tus clientes a distancia</h3>
+        <h3>💻 Impactá la vida de tus clientes a distancia</h3>
         <p>Ofrecé transformación real con herramientas efectivas para acompañarlos desde cualquier lugar.</p>
       </div>
       <div class="benefit">
-        <h3>Subí tus precios y confiá más en tu servicio</h3>
+        <h3>🚀 Subí tus precios y confiá más en tu servicio</h3>
         <p>Aprendé cómo generar más ingresos que no dependan únicamente de tu tiempo, mientras ofrecés un servicio excepcional.</p>
       </div>
     </div>
