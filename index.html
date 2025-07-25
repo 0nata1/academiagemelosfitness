@@ -3,146 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Iniciá tu carrera como entrenador online - Academia Gemelos Fitness">
   <title>Academia Gemelos Fitness</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      line-height: 1.6;
-      color: #212529;
-      background: #fff;
+      background-color: #fff;
+      color: #212121;
     }
-
     header {
-      background-color: white;
-      color: #111;
-      padding: 4rem 1rem;
       text-align: center;
+      padding: 60px 20px 30px;
     }
-
     header h1 {
-      font-size: 2.4rem;
-      margin-bottom: 1rem;
+      font-size: 2em;
+      color: #212121;
+      margin-bottom: 10px;
     }
-
     header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 2rem;
+      max-width: 800px;
+      margin: auto;
+      font-size: 1.1em;
+      color: #555;
     }
-
     ul {
       list-style: none;
       padding: 0;
-      margin: 1rem auto;
-      max-width: 600px;
-      text-align: left;
-      font-size: 1.05rem;
+      margin: 20px 0;
     }
-
     ul li {
-      margin: 0.7rem 0;
+      margin: 10px 0;
+      font-size: 1.05em;
     }
-
-    ul li::before {
-      content: "✅ ";
-      color: #ff4400;
-      font-weight: bold;
-    }
-
     .btn-wsp {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 12px 25px;
       background-color: #25D366;
       color: white;
-      padding: 0.75rem 1.5rem;
       font-weight: bold;
       text-decoration: none;
-      border-radius: 5px;
-      display: inline-block;
-      margin-top: 1.5rem;
-      transition: background 0.3s ease;
+      border-radius: 8px;
     }
-
-    .btn-wsp:hover {
-      background-color: #1ebe5d;
-    }
-
-    section {
-      padding: 4rem 1rem;
+    section.benefits {
       background-color: #f9f9f9;
+      padding: 50px 20px;
       text-align: center;
     }
-
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
+    section.benefits h2 {
+      font-size: 1.8em;
+      margin-bottom: 30px;
+      color: #212121;
     }
-
     .benefit-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1000px;
+      margin: auto;
     }
-
     .benefit {
-      background-color: white;
-      padding: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      max-width: 300px;
-      flex: 1;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
-
     .benefit h3 {
-      color: #ff5722;
+      color: #e63946;
       margin-bottom: 10px;
-      font-size: 1.2rem;
     }
 
-    .benefit p {
-      font-size: 0.95rem;
-    }
-
-    footer {
-      background-color: #151515;
+    /* Nueva sección fondo negro */
+    section.academia {
+      background-color: #000;
       color: white;
+      padding: 60px 20px;
       text-align: center;
-      padding: 1rem;
-      margin-top: 4rem;
     }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      header p {
-        font-size: 1rem;
-        padding: 0 1rem;
-      }
-
-      ul {
-        padding: 0 1rem;
-        font-size: 0.95rem;
-      }
-
-      .benefit-grid {
-        flex-direction: column;
-        gap: 1.2rem;
-      }
-
-      .benefit {
-        max-width: 100%;
-      }
-
-      .btn-wsp {
-        width: 90%;
-        margin: 2rem auto 0;
-        text-align: center;
-        font-size: 1.1rem;
-      }
+    section.academia h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    section.academia p {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 1.1em;
+    }
+    .profesiones {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      max-width: 900px;
+      margin: auto;
+      font-size: 1.1em;
+    }
+    .profesiones div {
+      text-align: center;
     }
   </style>
 </head>
@@ -152,14 +109,14 @@
     <h1>Iniciá tu carrera como entrenador online</h1>
     <p>Todo lo que necesitás para emprender con éxito en el mundo del fitness, con un sistema probado que utilizamos.</p>
     <ul>
-      <li>Aprendé cómo diseñar, lanzar y vivir de tu negocio de entrenamiento online.</li>
-      <li>Sentite seguro para entrenar a personas a través de internet.</li>
-      <li>Generá más ingresos y lográ tener más tiempo.</li>
+      <li>✅ Aprendé cómo diseñar, lanzar y vivir de tu negocio de entrenamiento online.</li>
+      <li>✅ Sentite seguro para entrenar a personas a través de internet.</li>
+      <li>✅ Generá más ingresos y lográ tener más tiempo.</li>
     </ul>
-    <a class="btn-wsp" href="https://wa.me/595994654445" target="_blank">📲 Contáctanos por WhatsApp</a>
+    <a class="btn-wsp" href="https://wa.me/595994654445" target="_blank">📲 Contactanos por WhatsApp</a>
   </header>
 
-  <section>
+  <section class="benefits">
     <h2>¿Por qué elegir la Academia?</h2>
     <div class="benefit-grid">
       <div class="benefit">
@@ -167,7 +124,7 @@
         <p>Gestioná tu negocio de entrenamiento sin límites geográficos ni horarios.</p>
       </div>
       <div class="benefit">
-        <h3>💻 Impactá la vida de tus clientes a distancia</h3>
+        <h3>🖥️ Impactá la vida de tus clientes a distancia</h3>
         <p>Ofrecé transformación real con herramientas efectivas para acompañarlos desde cualquier lugar.</p>
       </div>
       <div class="benefit">
@@ -177,9 +134,19 @@
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 Academia Gemelos Fitness
-  </footer>
+  <section class="academia">
+    <h2>¿Quién debería entrar en la Academia?</h2>
+    <p><strong>Empezá desde cero o potenciá lo que ya construiste.</strong> En la Academia vas a descubrir cómo posicionarte online, conseguir clientes y generar ingresos con un sistema probado que funciona.</p>
+    <div class="profesiones">
+      <div>🏋️‍♂️ <strong>Entrenadores personales</strong></div>
+      <div>💪 <strong>Preparadores físicos</strong></div>
+      <div>⚽ <strong>Entrenadores deportivos</strong></div>
+      <div>🏢 <strong>Gestores de centros</strong></div>
+      <div>🥗 <strong>Nutricionistas</strong></div>
+      <div>📝 <strong>Fisioterapeutas</strong></div>
+    </div>
+    <a class="btn-wsp" href="https://wa.me/595994654445" target="_blank" style="margin-top: 40px;">📲 Contactanos por WhatsApp</a>
+  </section>
 
 </body>
 </html>
