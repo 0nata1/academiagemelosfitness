@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html idioma="es">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Iniciá tu carrera como entrenador online - Academia Gemelos Fitness">
-  <title>Iniciá tu carrera como entrenador online</title>
+  <title>Academia Gemelos Fitness</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -85,6 +85,7 @@
 
     .benefit h3 {
       color: #ff4400;
+      margin-bottom: 10px;
     }
 
     footer {
@@ -93,6 +94,46 @@
       text-align: center;
       padding: 1rem;
       margin-top: 4rem;
+    }
+
+    /* ✅ Estilos para móviles */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      header p {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      ul {
+        padding: 0 1rem;
+        text-align: left;
+        font-size: 0.95rem;
+      }
+
+      .benefit-grid {
+        flex-direction: column;
+        gap: 1.2rem;
+      }
+
+      .benefit {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .btn-wsp {
+        width: 90%;
+        display: block;
+        margin: 2rem auto 0;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+
+      section h2 {
+        font-size: 1.6rem;
+      }
     }
   </style>
 </head>
